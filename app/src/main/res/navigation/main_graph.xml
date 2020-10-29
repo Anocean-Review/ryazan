@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.turizmryazan.ui.main.MainFragment"
+        android:label="MainFragment" />
+    <fragment
+        android:id="@+id/secondTestFragment"
+        android:name="ru.turizmryazan.ui.main.SecondTestFragment"
+        android:label="SecondTestFragment" />
+    <fragment
+        android:id="@+id/whereToStayFragment"
+        android:name="ru.turizmryazan.ui.wheretostay.WhereToStayFragment"
+        android:label="WhereToStayFragment" />
+    <fragment
+        android:id="@+id/whereToStayFilterFragment"
+        android:name="ru.turizmryazan.ui.wheretostay.WhereToStayFilterFragment"
+        android:label="WhereToStayFilterFragment" />
+    <fragment
+        android:id="@+id/whereToStayDetailFragment"
+        android:name="ru.turizmryazan.ui.wheretostay.WhereToStayDetailFragment"
+        android:label="WhereToStayDetail" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="ru.turizmryazan.ui.welcome.WelcomeFragment"
+        android:label="WelcomeFragment" />
+</navigation>

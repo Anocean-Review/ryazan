@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/main_background"
+        android:paddingBottom="@dimen/_24sdp">
+
+        <ImageView
+            android:id="@+id/iv_main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_345sdp"
+            android:background="@drawable/main_welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_main_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:fontFamily="@font/montserrat"
+            android:maxWidth="@dimen/_220sdp"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_go_frament_main"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_description_main_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/description_main_fragment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_menu_where_to_eat_frament_main"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_main_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_main_fragment" />
+
+        <TextView
+            android:id="@+id/tv_podrobnee_main_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/podrobnee"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_description_main_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description_main_fragment" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/ic_arrow_red_right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_podrobnee_main_fragment"
+            app:layout_constraintStart_toEndOf="@+id/tv_podrobnee_main_fragment"
+            app:layout_constraintTop_toTopOf="@+id/tv_podrobnee_main_fragment" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guid_line_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/iv_menu_where_to_go_frament_main"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_155sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@drawable/ic_wtg"
+            android:contentDescription="@string/where_to_go"
+            app:layout_constraintEnd_toStartOf="@+id/guid_line_center"
+            app:layout_constraintTop_toBottomOf="@+id/tv_podrobnee_main_fragment" />
+
+        <TextView
+            android:id="@+id/tv_menu_where_to_go_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/where_to_go"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_go_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_where_to_go_frament_main" />
+
+        <ImageView
+            android:id="@+id/iv_menu_where_to_eat_frament_main"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:background="@drawable/ic_wte"
+            android:contentDescription="@string/where_to_eat"
+            app:layout_constraintStart_toStartOf="@+id/guid_line_center"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_where_to_go_frament_main" />
+
+        <TextView
+            android:id="@+id/tv_menu_where_to_eat_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/where_to_eat"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_eat_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_where_to_eat_frament_main" />
+
+        <ImageView
+            android:id="@+id/iv_menu_where_to_stay_frament_main"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/ic_wts"
+            android:contentDescription="@string/where_to_stay"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_go_frament_main"
+            app:layout_constraintTop_toBottomOf="@+id/iv_menu_where_to_go_frament_main" />
+
+        <TextView
+            android:id="@+id/tv_menu_where_to_stay_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_90sdp"
+            android:text="@string/where_to_stay"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_stay_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_where_to_stay_frament_main" />
+
+        <ImageView
+            android:id="@+id/iv_menu_profit_trip_frament_main"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_155sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/ic_profit_trip"
+            android:contentDescription="@string/profit_trip"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_eat_frament_main"
+            app:layout_constraintTop_toBottomOf="@+id/iv_menu_where_to_eat_frament_main" />
+
+        <TextView
+            android:id="@+id/tv_menu_profit_trip_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_90sdp"
+            android:text="@string/profit_trip"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_profit_trip_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_profit_trip_frament_main" />
+
+        <ImageView
+            android:id="@+id/iv_menu_events_frament_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/ic_events"
+            android:contentDescription="@string/events"
+            app:layout_constraintEnd_toEndOf="@+id/iv_menu_profit_trip_frament_main"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_where_to_stay_frament_main"
+            app:layout_constraintTop_toBottomOf="@+id/iv_menu_where_to_stay_frament_main" />
+
+        <TextView
+            android:id="@+id/tv_menu_events_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/events"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_events_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_events_frament_main" />
+
+        <ImageView
+            android:id="@+id/iv_menu_help_frament_main"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@drawable/ic_help"
+            android:contentDescription="@string/help"
+            app:layout_constraintEnd_toStartOf="@+id/guid_line_center"
+            app:layout_constraintTop_toBottomOf="@+id/iv_menu_events_frament_main" />
+
+        <TextView
+            android:id="@+id/tv_menu_help_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_90sdp"
+            android:text="@string/help"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_help_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_help_frament_main" />
+
+        <ImageView
+            android:id="@+id/iv_menu_marshroute_frament_main"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/ic_marshroute"
+            android:contentDescription="@string/marshroute"
+            app:layout_constraintStart_toStartOf="@+id/guid_line_center"
+            app:layout_constraintTop_toBottomOf="@+id/iv_menu_events_frament_main" />
+
+        <TextView
+            android:id="@+id/tv_menu_marshroute_frament_main"
+            style="@style/MainMenuIconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marshroute"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/iv_menu_marshroute_frament_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_menu_marshroute_frament_main" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

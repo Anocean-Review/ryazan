@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background">#F4F6F8</color>
+    <color name="primary">#E5E5E5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splash_background">#867973</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="bottom_menu_grey">#D5DADF</color>
+    <color name="bottom_menu_red">#E3655F</color>
+    <color name="toolbar_title_grey">#242A30</color>
+    <color name="text_background_grey">#32D5DADF</color>
+    <color name="text_background_dark_frey">#32D5DADF</color>
+    <color name="text_rating">#242A30</color>
+    <color name="text_title">#242A30</color>
+    <color name="text_description">#242A30</color>
+    <color name="button_red">#E3655F</color>
+    <color name="button_cancel">#63676D</color>
+    <color name="more_detail">#2378C7</color>
+    <color name="link">#2378C7</color>
+    <color name="where_to_stay_background">#EACFA9</color>
+
+</resources>

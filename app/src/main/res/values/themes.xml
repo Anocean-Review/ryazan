@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TurizmRyazan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/main_background</item>
+        <item name="colorAccent">@color/button_red</item>
+    </style>
+
+    <style name="Splashscreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:colorPrimary">@color/splash_background</item>
+        <item name="colorPrimary">@color/splash_background</item>
+        <item name="android:colorPrimaryDark">@color/splash_background</item>
+        <item name="colorPrimaryDark">@color/splash_background</item>
+    </style>
+
+    <style name="StyleItemMenu">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="MainMenuIconText">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:layout_marginTop">@dimen/_12sdp</item>
+        <item name="android:layout_marginStart">@dimen/_16sdp</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spiner_background</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.TurizmRyazan">
+        <item name="android:background">@drawable/button_red_background</item>
+    </style>
+
+    <style name="TitleDetail" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textColor">@color/toolbar_title_grey</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="Rating" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:background">@drawable/text_background_grey</item>
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+        <item name="android:paddingEnd">@dimen/_8sdp</item>
+        <item name="android:paddingTop">@dimen/_1sdp</item>
+        <item name="android:paddingBottom">@dimen/_1sdp</item>
+        <item name="android:textColor">@color/text_rating</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+    </style>
+
+    <style name="Description" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/toolbar_title_grey</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="MoreDetail" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/more_detail</item>
+    </style>
+
+    <style name="DetailInformation" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/text_description</item>
+    </style>
+
+    <style name="DetailInformationLink" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/link</item>
+    </style>
+
+    <style name="AllNearby" parent="Theme.TurizmRyazan">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/link</item>
+    </style>
+</resources>

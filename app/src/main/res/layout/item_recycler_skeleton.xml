@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_item_recycler_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@color/white"
+        android:elevation="0dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_skeleton_photo_item_recycler_hotel"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:background="@color/text_background_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tv_skeleton_rating_item_recycler_hotel"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/text_background_grey"
+                app:layout_constraintStart_toEndOf="@+id/iv_skeleton_photo_item_recycler_hotel"
+                app:layout_constraintTop_toTopOf="@+id/iv_skeleton_photo_item_recycler_hotel" />
+
+            <ImageView
+                android:id="@+id/tv_skeleton_title_item_recycler_hotel"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/text_background_grey"
+                app:layout_constraintStart_toEndOf="@+id/iv_skeleton_photo_item_recycler_hotel"
+                app:layout_constraintTop_toBottomOf="@+id/tv_skeleton_rating_item_recycler_hotel" />
+
+            <ImageView
+                android:id="@+id/tv_skeleton_adress_item_recycler_hotel"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@color/text_background_grey"
+                app:layout_constraintStart_toEndOf="@+id/iv_skeleton_photo_item_recycler_hotel"
+                app:layout_constraintTop_toBottomOf="@+id/tv_skeleton_title_item_recycler_hotel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

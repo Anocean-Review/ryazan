@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Туризм Рязань</string>
+    <string name="menu_home">Главная</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_favourite">Избранное</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="title">Рязань и Рязанская область</string>
+    <string name="description_main_fragment">Рязань – старинный город и областной центр, расположенный в Средней полосе России и входящий в тридцатку самых крупных городов страны.</string>
+    <string name="podrobnee">ПОДРОБНЕЕ</string>
+    <string name="where_to_stay">Где остановиться</string>
+    <string name="where_to_go">Куда сходить</string>
+    <string name="where_to_eat">Где поесть</string>
+    <string name="profit_trip">Выгодная поездка</string>
+    <string name="events">События</string>
+    <string name="help">Помощь и советы</string>
+    <string name="marshroute">Маршруты</string>
+    <string name="filter">Фильтр</string>
+    <string name="apply">Применить</string>
+    <string name="cancel">Сбросить</string>
+    <string name="choice">Выбрать</string>
+    <string name="location">Местоположение</string>
+    <string name="type_hotels">Тип объекта</string>
+    <string name="more_detail">Подробнее</string>
+    <string name="information">Общая информация</string>
+    <string name="create_marshroute">Построить маршрут</string>
+    <string name="nearby">Объекты рядом</string>
+    <string name="all_nearby">Все объекты</string>
+    <string name="image_hotel">Изображение гостиницы</string>
+    <string name="be_payment">Является платным</string>
+    <string name="advantage">Преимущества по карте гостя</string>
+    <string name="hide">Скрыть</string>
+    <string name="welcome_to_ryazan">Добро пожаловать в Рязань!</string>
+    <string name="welcome_description">Рязань – старинный город и областной центр, расположенный в Средней полосе России и входящий в тридцатку самых крупных городов страны.
+        \n\n Рязань стоит на правом берегу реки Оки и удалена от Москвы на 190 км. В этот город приезжает немало российских и иностранных туристов, желающих познакомиться с одной из древнейших русских территорий, а также больше узнать о народных традициях и самобытных промыслах – скопинской керамике, михайловских кружевах, кадомском венизе и изделиях из лозы, которые мастерят в Шиловском районе Рязанской области.</string>
+</resources>
