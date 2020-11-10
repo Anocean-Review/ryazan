@@ -23,7 +23,7 @@ class TurizmApp: Application() {
 
         RxJavaPlugins.setErrorHandler { throwable: Throwable? ->
             if (throwable is UndeliverableException) {
-                Log.v(Constants.LOGS_TAG, "Ошибка RxJava не доставлен результат")
+                Log.d(Constants.LOGS_TAG, "Ошибка RxJava не доставлен результат ${throwable.message}")
             }
         }
     }

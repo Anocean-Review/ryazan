@@ -1,5 +1,6 @@
 package ru.turizmryazan.di.module
 
+import android.app.Application
 import dagger.Module
 import dagger.Provides
 import ru.turizmryazan.repository.PreferencesRepository
@@ -17,7 +18,7 @@ class RepositoryModule {
 
     @Singleton
     @Provides
-    fun providePreferencesRepository(): PreferencesRepository {
-        return PreferencesRepository()
+    fun providePreferencesRepository(app: Application): PreferencesRepository {
+        return PreferencesRepository(app)
     }
 }

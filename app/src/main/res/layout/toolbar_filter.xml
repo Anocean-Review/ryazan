@@ -8,9 +8,9 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_default"
+        style="@style/Toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_marginTop="@dimen/toolbar_margin_top"
+        android:layout_height="@dimen/toolbar_height"
         android:background="@color/main_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,25 +22,23 @@
 
             <ImageView
                 android:id="@+id/iv_arrow_left_default_toolbar_menu"
-                android:layout_width="@dimen/_12sdp"
-                android:layout_height="@dimen/_12sdp"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:background="@drawable/ic_close"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/toolbar_icon_margin"
+                android:background="@drawable/ic_arrow_toolbar_black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_title_default_toolbar_menu"
+                style="@style/ToolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36sdp"
+                android:layout_marginEnd="@dimen/_36sdp"
                 android:fontFamily="@font/montserrat"
-                android:gravity="center"
-                android:maxLines="2"
-                android:paddingStart="@dimen/_32sdp"
-                android:paddingEnd="@dimen/_32sdp"
                 android:textColor="@color/toolbar_title_grey"
-                android:textSize="@dimen/_16ssp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

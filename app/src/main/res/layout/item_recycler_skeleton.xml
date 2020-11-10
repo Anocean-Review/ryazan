@@ -22,12 +22,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="@dimen/item_recycler_height">
 
             <ImageView
                 android:id="@+id/iv_skeleton_photo_item_recycler_hotel"
                 android:layout_width="@dimen/_75sdp"
-                android:layout_height="@dimen/_85sdp"
+                android:layout_height="@dimen/item_recycler_height"
                 android:background="@color/text_background_grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

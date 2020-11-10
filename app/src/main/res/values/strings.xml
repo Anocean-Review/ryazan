@@ -9,6 +9,7 @@
     <string name="podrobnee">ПОДРОБНЕЕ</string>
     <string name="where_to_stay">Где остановиться</string>
     <string name="where_to_go">Куда сходить</string>
+    <string name="what_see">Что посмотреть? Куда сходить?</string>
     <string name="where_to_eat">Где поесть</string>
     <string name="profit_trip">Выгодная поездка</string>
     <string name="events">События</string>
@@ -32,4 +33,27 @@
     <string name="welcome_to_ryazan">Добро пожаловать в Рязань!</string>
     <string name="welcome_description">Рязань – старинный город и областной центр, расположенный в Средней полосе России и входящий в тридцатку самых крупных городов страны.
         \n\n Рязань стоит на правом берегу реки Оки и удалена от Москвы на 190 км. В этот город приезжает немало российских и иностранных туристов, желающих познакомиться с одной из древнейших русских территорий, а также больше узнать о народных традициях и самобытных промыслах – скопинской керамике, михайловских кружевах, кадомском венизе и изделиях из лозы, которые мастерят в Шиловском районе Рязанской области.</string>
+    <string name="yandex_map_not_install">Яндекс карты не установлены</string>
+    <string name="type_kitchen">Тип кухни</string>
+    <string name="type_attraction">Тип объекта</string>
+    <string name="error_server">Ошибка сервера. Попробуйте еще раз через некоторое время</string>
+    <string name="authorization">Авторизация</string>
+    <string name="adress_email">Адрес электронной почты</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="authorization_description">Для использования приложения на все сто войди в свою учетную запись.</string>
+    <string name="havent_account">Еще нет аккаунта?</string>
+    <string name="registration">Регистрация</string>
+    <string name="enter_login_and_password">Введите логин и пароль. Поля не могут быть пустыми.</string>
+    <string name="login_error">Авторизация прошла не успешно. Введите корректные логин и пароль и попробуйте снова.</string>
+    <string name="success">Успешно</string>
+    <string name="send_password">Выслать пароль</string>
+    <string name="enter_email">Введите адрес электронной почты</string>
+    <string name="recovery_password">Восстановление пароля</string>
+    <string name="repeat_password">Подтвердите пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="have_account">Уже есть аккаунт?</string>
+    <string name="type_age">Ваш возраст</string>
+    <string name="type_sex">Пол</string>
 </resources>

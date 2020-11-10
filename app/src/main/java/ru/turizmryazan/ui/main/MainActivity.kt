@@ -1,13 +1,16 @@
 package ru.turizmryazan.ui.main
 
+import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -20,17 +23,24 @@ class MainActivity : AppCompatActivity(), IMainComponent, INavigation {
 
     private lateinit var navController: NavController
     private lateinit var bottomNavigation: BottomNavigationView
+    private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         initViews()
+        loadDictionary()
     }
 
     private fun initViews() {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         bottomNavigation = findViewById(R.id.bottom_navigation)
+    }
+
+    private fun loadDictionary() {
+        viewModel.loadDictionary()
     }
 
     override fun hideBottomNavigation() {
@@ -83,6 +93,50 @@ class MainActivity : AppCompatActivity(), IMainComponent, INavigation {
         navController.popBackStack()
     }
 
+    override fun openErrorServerFragment() {
+        navController.navigate(R.id.errorServerFragment)
+    }
+
+    override fun openWhereToEat() {
+        navController.navigate(R.id.whereToEatFragment)
+    }
+
+    override fun openWhereToEatFilter() {
+        navController.navigate(R.id.whereToEatFilterFragment)
+    }
+
+    override fun openWhereToEatDetail(id: String?) {
+        val bundle: Bundle = Bundle()
+        bundle.putString(Constants.EAT_PLACE_ID_TAG, id)
+        navController.navigate(R.id.whereToEatDetailFragment, bundle)
+    }
+
+    override fun openWhereToGo() {
+        navController.navigate(R.id.whereToGoFragment)
+    }
+
+    override fun openWhereToGoFilter() {
+        navController.navigate(R.id.whereToGoFilterFragment)
+    }
+
+    override fun openWhereToGoDetail(id: String?) {
+        val bundle: Bundle = Bundle()
+        bundle.putString(Constants.ATRACTION_ID_TAG, id)
+        navController.navigate(R.id.whereToGoDetailFragmnet, bundle)
+    }
+
+    override fun openLogin() {
+        navController.navigate(R.id.loginFragment)
+    }
+
+    override fun openForgetPassword() {
+        navController.navigate(R.id.forgetPasswordFragment)
+    }
+
+    override fun openRegistration() {
+        navController.navigate(R.id.registrationFragment)
+    }
+
     override fun openWhereToStayDetail(id: String?) {
         val bundle: Bundle = Bundle()
         bundle.putString(Constants.HOTEL_ID_TAG, id)
@@ -92,5 +146,4 @@ class MainActivity : AppCompatActivity(), IMainComponent, INavigation {
     override fun openWelcome() {
         navController.navigate(R.id.welcomeFragment)
     }
-
 }

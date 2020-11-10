@@ -82,4 +82,30 @@
         <item name="android:textSize">@dimen/_12ssp</item>
         <item name="android:textColor">@color/link</item>
     </style>
+
+    <style name="Toolbar" parent="Theme.TurizmRyazan">
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetStart">0dp</item>
+    </style>
+    <style name="ToolbarTitle" parent="Theme.TurizmRyazan">
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="EditTextDefault" parent="Theme.TurizmRyazan">
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingTop">@dimen/_13sdp</item>
+        <item name="android:paddingBottom">@dimen/_13sdp</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:paddingEnd">@dimen/_15sdp</item>
+        <item name="android:textColor">@color/text_description</item>
+    </style>
 </resources>

@@ -28,4 +28,44 @@
         android:id="@+id/welcomeFragment"
         android:name="ru.turizmryazan.ui.welcome.WelcomeFragment"
         android:label="WelcomeFragment" />
+    <fragment
+        android:id="@+id/whereToEatFragment"
+        android:name="ru.turizmryazan.ui.wheretoeat.WhereToEatFragment"
+        android:label="WhereToEatFragment" />
+    <fragment
+        android:id="@+id/whereToEatFilterFragment"
+        android:name="ru.turizmryazan.ui.wheretoeat.WhereToEatFilterFragment"
+        android:label="WhereToEatFilterFragment" />
+    <fragment
+        android:id="@+id/whereToEatDetailFragment"
+        android:name="ru.turizmryazan.ui.wheretoeat.WhereToEatDetailFragment"
+        android:label="WhereToEatDetail" />
+    <fragment
+        android:id="@+id/whereToGoFragment"
+        android:name="ru.turizmryazan.ui.wheretogo.WhereToGoFragment"
+        android:label="WhereToGoFragment" />
+    <fragment
+        android:id="@+id/whereToGoFilterFragment"
+        android:name="ru.turizmryazan.ui.wheretogo.WhereToGoFilterFragment"
+        android:label="WhereToGoFilterFragment" />
+    <fragment
+        android:id="@+id/errorServerFragment"
+        android:name="ru.turizmryazan.ui.error.ErrorServerFragment"
+        android:label="ErrorServerFragment" />
+    <fragment
+        android:id="@+id/whereToGoDetailFragmnet"
+        android:name="ru.turizmryazan.ui.wheretogo.WhereToGoDetailFragmnet"
+        android:label="WhereToGoDetailFragmnet" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.turizmryazan.ui.login.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="ru.turizmryazan.ui.login.ForgetPasswordFragment"
+        android:label="ForgetPasswordFragment" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="ru.turizmryazan.ui.login.RegistrationFragment"
+        android:label="RegistrationFragment" />
 </navigation>

@@ -18,10 +18,13 @@
     <color name="text_rating">#242A30</color>
     <color name="text_title">#242A30</color>
     <color name="text_description">#242A30</color>
-    <color name="button_red">#E3655F</color>
+    <color name="text_description_alpha_98">#62242A30</color>
+    <color name="button_red">#E82F2F</color>
     <color name="button_cancel">#63676D</color>
     <color name="more_detail">#2378C7</color>
     <color name="link">#2378C7</color>
     <color name="where_to_stay_background">#EACFA9</color>
-
+    <color name="dots_stroke">#FFFFFF</color>
+    <color name="where_to_eat_background" >#215CB7</color>
+    <color name="where_to_go_background">#25C3C8</color>
 </resources>

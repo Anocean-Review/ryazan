@@ -16,22 +16,24 @@ class MainFragment : BaseFragment() {
 
     private lateinit var ivMain: ImageView
     private lateinit var ivWhereToStay: ImageView
+    private lateinit var ivWhereToEat: ImageView
+    private lateinit var ivWhereToGo: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.v("Logs", "OnCreate")
+        Log.d("Logs", "OnCreate")
 
     }
 
     override fun onStart() {
         super.onStart()
-        Log.v("Logs", "onStart")
+        Log.d("Logs", "onStart")
 
     }
 
     override fun onResume() {
         super.onResume()
-        Log.v("Logs", "onResume")
+        Log.d("Logs", "onResume")
     }
 
     override fun onCreateView(
@@ -39,7 +41,7 @@ class MainFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.v("Logs", "onCreateView")
+        Log.d("Logs", "onCreateView")
         iMainComponent?.setTransparentStatusBar()
         iMainComponent?.showBottomNavigation()
         return inflater.inflate(R.layout.fragment_main, container, false)
@@ -55,15 +57,26 @@ class MainFragment : BaseFragment() {
     private fun initViews(view: View) {
         ivMain = view.findViewById(R.id.iv_main_fragment)
         ivWhereToStay = view.findViewById(R.id.iv_menu_where_to_stay_frament_main)
+        ivWhereToEat = view.findViewById(R.id.iv_menu_where_to_eat_frament_main)
+        ivWhereToGo = view.findViewById(R.id.iv_menu_where_to_go_frament_main)
     }
 
     private fun listeners() {
         ivMain.setOnClickListener {
-            iNavigate?.openWelcome()
+           // iNavigate?.openWelcome()
+            iNavigate?.openLogin()
         }
 
         ivWhereToStay.setOnClickListener {
             iNavigate?.openWhereToStay()
+        }
+
+        ivWhereToEat.setOnClickListener {
+            iNavigate?.openWhereToEat()
+        }
+
+        ivWhereToGo.setOnClickListener {
+            iNavigate?.openWhereToGo()
         }
     }
 

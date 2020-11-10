@@ -24,6 +24,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/includedTransparent" />
 
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_280sdp"
+        android:alpha="0.5"
+        android:background="@drawable/ic_welcome_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         style="@style/Description"
         android:layout_width="0dp"

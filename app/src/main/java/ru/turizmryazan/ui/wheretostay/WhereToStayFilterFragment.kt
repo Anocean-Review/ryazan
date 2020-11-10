@@ -13,6 +13,7 @@ import ru.turizmryazan.model.models.HotelsFilter
 import ru.turizmryazan.model.models.Location
 import ru.turizmryazan.model.models.Type
 import ru.turizmryazan.ui.main.MainViewModel
+import ru.turizmryazan.utils.Utils
 
 class WhereToStayFilterFragment : BaseFragment() {
 
@@ -105,19 +106,19 @@ class WhereToStayFilterFragment : BaseFragment() {
 
     private fun onDictionaryLocations(dictionaryLocations: MutableList<Location>?) {
         dictionaryLocations?.let {
-            spinnerLocations.adapter = getLocationAdapter(it)
+            spinnerLocations.adapter = Utils.getLocationAdapter(requireContext(), it)
         }
     }
 
     private fun onDictionaryTypeHotels(dictionaryTypeHotels: MutableList<Type>?) {
         dictionaryTypeHotels?.let {
-            spinnerTypeHotel.adapter = getTypeHotelsAdapter(it)
+            spinnerTypeHotel.adapter = Utils.getTypeHotelsAdapter(requireContext(), it)
         }
     }
 
     fun onHotelsFilter(hotelsFilter: HotelsFilter?) {
         hotelsFilter?.let {
-            it.locationHotel?.let {
+            it.location?.let {
                 val position: Int? =
                     viewModel.dictionaryLocations.value?.indexOfFirst { c -> c.id == it.id }
                 position?.let {
@@ -125,7 +126,7 @@ class WhereToStayFilterFragment : BaseFragment() {
                 }
             }
 
-            it.typeHotel?.let {
+            it.type?.let {
                 val position: Int? =
                     viewModel.dictionaryTypeHotels.value?.indexOfFirst { c -> c.id == it.id }
                 position?.let {
@@ -133,34 +134,6 @@ class WhereToStayFilterFragment : BaseFragment() {
                 }
             }
         }
-    }
-
-    private fun getLocationAdapter(locations: MutableList<Location>): SpinnerAdapter {
-        val listLoaction: MutableList<String> = mutableListOf(getString(R.string.location))
-
-        locations.forEach { location ->
-            listLoaction.add(location.name ?: "")
-        }
-
-        return ArrayAdapter(
-            requireContext(),
-            R.layout.spinner_item,
-            listLoaction
-        )
-    }
-
-    private fun getTypeHotelsAdapter(it: MutableList<Type>): SpinnerAdapter {
-        val listTypeHotels: MutableList<String> = mutableListOf(getString(R.string.type_hotels))
-
-        it.forEach { typeHotel ->
-            listTypeHotels.add(typeHotel.name ?: "")
-        }
-
-        return ArrayAdapter(
-            requireContext(),
-            R.layout.spinner_item,
-            listTypeHotels
-        )
     }
 
 }

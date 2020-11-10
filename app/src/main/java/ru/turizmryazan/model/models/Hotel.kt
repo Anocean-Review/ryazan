@@ -18,10 +18,10 @@ data class Hotel(
     var description: String?,
     @SerializedName("email")
     var email: String?,
-    @SerializedName("file_main")
-    var fileMain: FileMain?,
     @SerializedName("id")
     var id: String?,
+    @SerializedName("images")
+    var images: Images?,
     @SerializedName("lat")
     var lat: String?,
     @SerializedName("location")

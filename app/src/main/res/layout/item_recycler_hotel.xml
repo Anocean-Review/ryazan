@@ -24,12 +24,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="@dimen/item_recycler_height">
 
             <ImageView
                 android:id="@+id/iv_photo_item_recycler_hotel"
                 android:layout_width="@dimen/_75sdp"
-                android:layout_height="@dimen/_86sdp"
+                android:layout_height="@dimen/item_recycler_height"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,6 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_4sdp"
+                android:maxLines="1"
+                android:ellipsize="end"
                 app:layout_constraintStart_toEndOf="@+id/iv_photo_item_recycler_hotel"
                 app:layout_constraintTop_toTopOf="@+id/iv_photo_item_recycler_hotel"
                 tools:text="5 звёзд" />
@@ -49,24 +51,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:ellipsize="end"
                 android:fontFamily="@font/montserrat"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:textColor="@color/text_title"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_photo_item_recycler_hotel"
                 app:layout_constraintTop_toBottomOf="@+id/tv_rating_item_recycler_hotel"
-                tools:text="Хостел «Первый момент»" />
+                tools:text="Хостел «Первый момент» " />
 
             <TextView
                 android:id="@+id/tv_adress_item_recycler_hotel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:alpha="0.85"
                 android:ellipsize="end"

@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@color/main_background">
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/ns_where_to_stay_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewPager2"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_260sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_title_fragment_where_to_stay_deatil"
@@ -36,7 +27,7 @@
                 android:layout_marginEnd="@dimen/_16sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewPager2"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:text="Хостел «Первый момент»" />
 
             <TextView
@@ -134,7 +125,7 @@
                     tools:text="Преимущества по карте гостя" />
 
                 <TextView
-                    android:id="@+id/tv_contact_fragment_where_to_stay_detail"
+                    android:id="@+id/tv_contact_phone_fragment_where_to_stay_detail"
                     style="@style/DetailInformationLink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -180,7 +171,7 @@
                 android:layout_height="@dimen/_45sdp"
                 android:layout_marginTop="@dimen/_24sdp"
                 android:layout_marginEnd="16dp"
-                android:background="@color/button_red"
+                android:background="@color/where_to_stay_background"
                 android:contentDescription="@string/create_marshroute"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout"
@@ -236,11 +227,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <include
-        android:id="@+id/includedDetail"
-        layout="@layout/toolbar_detail"
-        android:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/includedToolbar"
+        layout="@layout/toolbar_collapsed_viewpager" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

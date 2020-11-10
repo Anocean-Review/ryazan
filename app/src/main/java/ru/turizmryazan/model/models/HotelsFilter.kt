@@ -1,6 +1,6 @@
 package ru.turizmryazan.model.models
 
 class HotelsFilter (
-    var locationHotel: Location?,
-    var typeHotel: Type?
-)
+    override var location: Location?,
+    override var type: Type?
+): Filter()
