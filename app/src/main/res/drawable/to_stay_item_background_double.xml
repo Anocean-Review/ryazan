@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="@dimen/_43sdp">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/main_background" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/_43sdp">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/where_to_stay_background" />
+        </shape>
+    </item>
+</layer-list>

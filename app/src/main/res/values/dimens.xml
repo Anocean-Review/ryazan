@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_margin_top">@dimen/_15sdp</dimen>
+    <dimen name="toolbar_height">@dimen/_50sdp</dimen>
+    <dimen name="item_recycler_height">@dimen/_95sdp</dimen>
+    <dimen name="detail_image_height">@dimen/_260sdp</dimen>
+    <dimen name="item_recycler_go_height">@dimen/_140sdp</dimen>
+    <dimen name="toolbar_icon_margin">@dimen/_16sdp</dimen>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background">
+
+    <include
+        android:id="@+id/includedDefault"
+        layout="@layout/toolbar_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="4dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@drawable/ic_play_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/sp_location_fragment_where_to_go_filter"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:dropDownWidth="@dimen/_280sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        style="@style/SpinnerTheme"
+        android:spinnerMode="dropdown"
+        android:popupElevation="2dp"
+        android:popupBackground="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includedDefault" />
+
+    <Spinner
+        android:id="@+id/sp_type_object_fragment_where_to_go_filter"
+        style="@style/SpinnerTheme"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:dropDownWidth="@dimen/_280sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:spinnerMode="dropdown"
+        android:popupElevation="2dp"
+        android:popupBackground="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sp_location_fragment_where_to_go_filter"
+        app:layout_constraintStart_toStartOf="@+id/sp_location_fragment_where_to_go_filter"
+        app:layout_constraintTop_toBottomOf="@+id/sp_location_fragment_where_to_go_filter" />
+
+    <ImageButton
+        android:id="@+id/ib_apply_fragment_where_to_go"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@color/button_red"
+        app:layout_constraintStart_toStartOf="@+id/sp_type_object_fragment_where_to_go_filter"
+        app:layout_constraintTop_toBottomOf="@+id/sp_type_object_fragment_where_to_go_filter"
+        android:contentDescription="@string/apply" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/apply"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_apply_fragment_where_to_go"
+        app:layout_constraintEnd_toEndOf="@+id/ib_apply_fragment_where_to_go"
+        app:layout_constraintStart_toStartOf="@+id/ib_apply_fragment_where_to_go"
+        app:layout_constraintTop_toTopOf="@+id/ib_apply_fragment_where_to_go" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/ic_cancel_small"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/ib_apply_fragment_where_to_go"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_cancel_fragment_where_to_go_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/button_cancel"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

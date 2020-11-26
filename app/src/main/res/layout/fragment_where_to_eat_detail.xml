@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_where_to_eat_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_fragment_where_to_eat_deatil"
+                style="@style/TitleDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Ресторан «Первый момент»" />
+
+            <TextView
+                android:id="@+id/tv_description_fragment_where_to_eat_deatil"
+                style="@style/Description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:ellipsize="end"
+                android:maxLines="7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_fragment_where_to_eat_deatil"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_fragment_where_to_eat_deatil"
+                tools:text="Ресторан «Первый момент» – старинный город и областной центр, расположенный в Средней полосе России и входящий в тридцатку" />
+
+            <ImageView
+                android:id="@+id/iv_description_gradient"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/description_grey_gradient"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_description_fragment_where_to_eat_deatil"
+                app:layout_constraintEnd_toEndOf="@+id/tv_description_fragment_where_to_eat_deatil"
+                app:layout_constraintStart_toStartOf="@+id/tv_description_fragment_where_to_eat_deatil"
+                app:layout_constraintTop_toTopOf="@+id/tv_description_fragment_where_to_eat_deatil" />
+
+            <TextView
+                android:id="@+id/tv_more_deatil_fragment_where_to_eat_detail"
+                style="@style/MoreDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/more_detail"
+                app:layout_constraintStart_toStartOf="@+id/tv_description_fragment_where_to_eat_deatil"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description_fragment_where_to_eat_deatil" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/information"
+                app:layout_constraintStart_toStartOf="@+id/tv_more_deatil_fragment_where_to_eat_detail"
+                app:layout_constraintTop_toBottomOf="@+id/tv_more_deatil_fragment_where_to_eat_detail" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <TextView
+                    android:id="@+id/tv_adress_fragment_where_to_eat_detail"
+                    style="@style/DetailInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_map_marker_1"
+                    tools:text="г. Рязань, улица Плюшкина 17" />
+
+                <TextView
+                    android:id="@+id/tv_type_kitchen_fragment_where_to_eat_detail"
+                    style="@style/DetailInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_type_kitchen"
+                    tools:text="Кафе" />
+
+                <TextView
+                    android:id="@+id/tv_pay_method_fragment_where_to_eat_detail"
+                    style="@style/DetailInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_purse"
+                    tools:text="Является платным" />
+
+                <TextView
+                    android:id="@+id/tv_advantage_fragment_where_to_eat_detail"
+                    style="@style/DetailInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_like"
+                    tools:text="Преимущества по карте гостя" />
+
+                <TextView
+                    android:id="@+id/tv_contact_fragment_where_to_eat_detail"
+                    style="@style/DetailInformationLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_phone_call"
+                    tools:text="7 904 433 22 17, Алексей" />
+
+                <TextView
+                    android:id="@+id/tv_email_fragment_where_to_eat_detail"
+                    style="@style/DetailInformationLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_mail"
+                    tools:text="raink@mail.ru" />
+
+                <TextView
+                    android:id="@+id/tv_web_fragment_where_to_eat_detail"
+                    style="@style/DetailInformationLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_web"
+                    tools:text="www.first-moment.ru" />
+
+                <TextView
+                    android:id="@+id/tv_time_fragment_where_to_eat_detail"
+                    style="@style/DetailInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    app:drawableStartCompat="@drawable/ic_time"
+                    tools:text="Пн-Вс, 9:00 - 22:00" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/iv_create_marshroute_fragment_where_to_eat_detail"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/button_red"
+                android:contentDescription="@string/create_marshroute"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/create_marshroute"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_create_marshroute_fragment_where_to_eat_detail"
+                app:layout_constraintEnd_toEndOf="@+id/iv_create_marshroute_fragment_where_to_eat_detail"
+                app:layout_constraintStart_toStartOf="@+id/iv_create_marshroute_fragment_where_to_eat_detail"
+                app:layout_constraintTop_toTopOf="@+id/iv_create_marshroute_fragment_where_to_eat_detail" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/TitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:text="@string/nearby"
+                app:layout_constraintStart_toStartOf="@+id/iv_create_marshroute_fragment_where_to_eat_detail"
+                app:layout_constraintTop_toBottomOf="@+id/iv_create_marshroute_fragment_where_to_eat_detail" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_all_nearby_where_to_eat_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/includedToolbar"
+        layout="@layout/toolbar_collapsed_viewpager" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
